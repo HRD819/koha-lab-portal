@@ -1,0 +1,17 @@
+# 輔大圖資地下系圖書館入口
+
+GitHub Pages 靜態網站。主要入口為分類編目，OPAC供讀者視角預覽。目前Koha外部連線尚未開放，按鈕會顯示連線準備提示。
+
+## 部署
+
+GitHub Pages從main分支根目錄發布，無建置依賴。網站僅包含公開文案與靜態資產，不包含Koha程式、資料庫、學生名單、帳號或密碼。
+
+## 正式連線啟用
+
+修改`assets/config.js`的staff、opac、password為獲核准的HTTPS網址；staff應指向館員端`/cgi-bin/koha/cataloguing/addbooks.pl`，password應指向OPAC的`/cgi-bin/koha/opac-passwd.pl`。空白欄位保持準備中提示。連線與權限驗證完成後再設定，並依實際狀態調整網站文案。前端設定不是存取控制，安全措施應在Koha服務入口實施。
+
+未設定自訂網域；取得授權前不新增CNAME或修改DNS。搬遷主機後更新連結即可。
+
+## 本機預覽
+
+`python3 -m http.server 8765 --bind 127.0.0.1`
