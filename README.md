@@ -15,3 +15,5 @@ GitHub Pages從main分支根目錄發布，無建置依賴。網站僅包含公�
 ## 本機預覽
 
 `python3 -m http.server 8765 --bind 127.0.0.1`
+
+2026-10-19：使用者完成郵件驗證後，Koha登入出現plain Unauthorized；試用未通過驗收，公開入口已暫停，兩個URL設定已清空。本機服務正常。
