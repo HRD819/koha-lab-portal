@@ -1,2 +1,1 @@
-// Remote trial paused after authentication failure; keep origins private.
-window.KOHA_PORTAL = Object.freeze({staff:"",opac:"",password:""});
+window.KOHA_PORTAL = Object.freeze({staff:"https://140.136.115.62/cgi-bin/koha/cataloguing/addbooks.pl",opac:"https://140.136.115.62:8443/",password:"https://140.136.115.62:8443/cgi-bin/koha/opac-passwd.pl"});

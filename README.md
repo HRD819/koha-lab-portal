@@ -17,3 +17,7 @@ GitHub Pages從main分支根目錄發布，無建置依賴。網站僅包含公�
 `python3 -m http.server 8765 --bind 127.0.0.1`
 
 2026-10-19：使用者完成郵件驗證後，Koha登入出現plain Unauthorized；試用未通過驗收，公開入口已暫停，兩個URL設定已清空。本機服務正常。
+
+## 2026-10-19 校內來源入口
+
+正式 HTTPS 入口已設定於 assets/config.js；主要按鈕直達分類編目，OPAC 為讀者視角預覽。應用服務僅接受輔大校內來源，校外需使用能將目的流量送入校網的學校 VPN。GitHub Pages 本身公開，並不授予 Koha 權限。VPN 各類帳號與路由仍需以實際裝置驗收。
