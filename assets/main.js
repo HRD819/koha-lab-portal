@@ -23,8 +23,8 @@
     button.addEventListener('click', function () { dialog.close(); });
   });
   if (isHttpsUrl(config.staff)) {
-    document.getElementById('service-status').textContent = '分類編目入口已設定 · 請依課程通知登入';
-    document.querySelector('#connection h2').textContent = '依課程通知，使用個人帳號登入。';
-    document.querySelector('#connection h2 + p').textContent = '請使用分類編目入口開始操作；若入口需要校內網路或指定連線方式，請依教師或管理員提供的說明使用。';
+    document.getElementById('service-status').textContent = '受保護遠端試用 · 須通過郵件驗證';
+    document.querySelector('#connection h2').textContent = '遠端試用已接通，先驗證再登入。';
+    document.querySelector('#connection h2 + p').textContent = '先以管理員核准的電子郵件收取驗證碼，再使用個人 Koha 帳號登入。此為小規模試用，尚未開放整班使用；臨時網址在連線服務重啟後會變更。';
   }
 }());
