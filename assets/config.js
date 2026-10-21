@@ -1,1 +1,1 @@
-window.KOHA_PORTAL = Object.freeze({staff:"https://140.136.115.62/cgi-bin/koha/cataloguing/addbooks.pl",opac:"https://140.136.115.62:8443/",password:"https://140.136.115.62:8443/cgi-bin/koha/opac-passwd.pl"});
+window.KOHA_PORTAL = Object.freeze({candidates: ['140.136.115.61', '140.136.115.62']});
